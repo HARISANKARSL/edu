@@ -1,0 +1,32 @@
+<app-cover>sdfsfd</app-cover>
+<!-- FACULTY -->
+<div class="gallery  bg-white-100 xl:p-5">
+    <div class="container p-3">
+      <h1 class="text-black font-bold text-4xl m-2 p-3">Our Faculties</h1>
+      <div class=" row">
+        <div class="col-sm-12 col-md-6 col-lg-3 p-3" *ngFor="let items of allImages">
+          <div class="group relative rounded-md cursor-pointer  overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            <div class="h-96 w-full ">
+              <img class="h-full w-full object-fill transition-transform duration-500  group-hover:scale-110" src="{{items.img}}" alt="" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-black/60  group-hover:from-black/20 group-hover:via-black/20 group-hover:to-black/20"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60  group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-40 mb-5">
+              <h1 class="font-dmserif text-lg  font-bold text-white">{{items.name}}</h1>
+              <p class="mt-3 text-lg italic text-white  transition-opacity duration-300 group">{{items.subject}}</p>
+         
+            </div>
+          </div>
+        </div>
+       
+     
+   
+     
+     
+    
+        
+        
+      </div>
+    
+    </div>
+  </div>

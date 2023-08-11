@@ -1,0 +1,36 @@
+
+::ng-deep .owl-theme .owl-dots .owl-dot span {
+    background: #D6D6D6!important; /* dots color*/
+    outline: 1px solid black;
+  }
+ 
+ ::ng-deep .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: #ff0000!important; /*active and on hover color*/
+  }
+  ::ng-deep .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: #ff0000!important; /*active and on hover color*/
+  }
+  ::ng-deep  .owl-prev {
+    position: absolute;
+    left: -50px;
+    top: 5px;
+
+}
+::ng-deep  .owl-next {
+    position: absolute;
+    right: -50px;
+    top: 5px;
+    padding: 20px;
+    font-size: 40px;
+    color: black;
+    background-color: black;
+    
+
+}
+::ng-deep .owl-prev, ::ng-deep .owl-next {
+
+font-size: 20px !important;
+  background-color: black !important;
+}

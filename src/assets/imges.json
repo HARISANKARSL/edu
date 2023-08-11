@@ -1,0 +1,86 @@
+{
+    "staff":[{
+        "name":"ABIN K ELDHOSE",
+        "img":"/assets/img/ABIN K ELDHOSE .jpg",
+        "subject":"PHYSICS"
+    },
+{
+    "name":"MUHAMMAD AMEEN ES",
+    "img":"/assets/img/MUHAMMED AMEEN ES.jpg",
+    "subject":"MATHEMATICS"
+},
+{
+    "name":"AYAN IBRAHIM",
+    "img":"/assets/img/AYAN IBRAHIM .jpg",
+    "subject":"CHEMISTRY"
+},
+{
+    "name":"AKBAR MUHAMMED",
+    "img":"/assets/img/AKBAR MUHAMMED .jpg",
+    "subject":"CHEMISTRY"
+},
+{
+    "name":"AMINA KA",
+    "img":"/assets/img/AMINA KA .jpg",
+    "subject":"MATHEMATICS"
+},
+
+{
+    "name":"FIDHA BINDH ANAS",
+    "img":"/assets/img/Fidha Bindh Anas.jpg",
+    "subject":"PHYSICS"
+},
+{
+    "name":"ARUN SAMBASIVAN",
+    "img":"/assets/img/ARUN SAMBASIVAN.jpg",
+    "subject":"ACCOUNTANCY"
+},
+{
+    "name":"JEAN ROY",
+    "img":"/assets/img/JEAN ROY.jpg",
+    "subject":"SCIENCE"
+},
+{
+    "name":"ANNMARIYA DENSON",
+    "img":"/assets/img/ANNMARIYA DENSON .jpg",
+    "subject":"SCIENCE"
+    },
+{
+    "name":"GEORGEKUTTY SHENNY",
+    "img":"/assets/img/GEORGEKUTTY SENNY.jpg",
+    "subject":"MATHEMATICS"
+},
+
+
+{
+"name":"FATHIMATHU ZAHADHYA  ",
+"img":"/assets/img/FATHIMATHU ZAHADIYA NH.jpg",
+"subject":"LANGUAGE"
+},{
+    "name":"FATHIMA MS ",
+    "img":"/assets/img/FATHIMA MS.jpg",
+    "subject":"LANGUAGE" 
+},{
+    "name":"IRFAN ANAS ",
+    "img":"/assets/img/IRFAN ANAS.jpg",
+    "subject":"SCIENCE"
+},
+{
+    "name":"ANAGHA PUSHPAN",
+    "img":"/assets/img/ANAKHA PUSHPAN.jpg",
+    "subject":"SCIENCE"
+    },
+{
+    "name":"MALIHA JASMINE",
+    "img":"/assets/img/MALIHA JASMINE.jpg",
+    "subject":"LANGUAGE"
+    },{
+        "name":"FEMINA P",
+        "img":"/assets/img/FEMINA R .jpg",
+        "subject":"SCIENCE"
+        }
+
+
+
+]
+}

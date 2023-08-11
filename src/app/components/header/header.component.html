@@ -1,0 +1,85 @@
+
+    
+    
+    
+    
+    
+    
+    <header class="">
+        <div class="bg-purple-950  w-full p-2 hidden xl:block border-b-2 border-slate-400 border-opacity-30">
+          <div class="container ">
+          <nav class=" flex w-full items-center  justify-between">
+            <ul class="flex text-light mx-5 ">
+             <app-phone></app-phone>
+             <app-email></app-email>
+              <li  class="flex items-center justify-center ms-2 text-sm">
+                <span class="text-danger mx-2 ">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg>
+                  
+                  
+                </span >
+                Randar, Muvattupuzha, Kerala 686661
+              </li>
+              
+            </ul>
+          <app-social></app-social>
+          </nav>
+          </div>
+          </div>
+          
+      
+      
+        <div class="  {{isNavbarScroll?'fixed top-0 shadow transition-all duration-150 bg-slate-800 w-full z-10 animate__animated animate__fadeInDown animate-faster p-0 text-white':'bg-purple-950 h-24 text-white py-1  w-full'}}">
+         
+          <div class="container  h-24 flex items-center justify-between ">
+            <div class="logo xl:mx-5 ">
+              <img src="./assets/img/logonw.png" alt="" class="xl:w-40 w-24">
+            </div>
+            <div class="text-xl font-black lg:hidden ">
+              <svg (click)="openSidebar()" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </div>
+            <div class="gallery hidden lg:block" >
+              <app-menu ></app-menu>
+            
+            </div>
+           
+            <div class="me-5 hidden lg:block ">
+              <app-auth></app-auth>
+            </div>
+           
+            <nav class="  animate__animated animate__fadeInDown animate-faster
+             {{isSidebarOpen?'flex w-full h-screen z-40 absolute  left-0 top-0 text-white':'hidden'}} " >
+              <div class="bg-gray-800 w-full md:max-w-md ">
+              <div class="flex justify-end  ">
+                <span class="cursor-pointer px-3">
+                  <svg (click)="closeSidebar()" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </span>
+              </div>
+              <div class="mt-3 md:p-5 p-2 ">
+                <app-phone class="p-3" ></app-phone>
+              <app-email class="p-3"></app-email>
+              <app-auth class=" items-center m-3 w-full "></app-auth>
+              <app-menu class=" items-center  w-full " (click)="closeSidebar()" ></app-menu>
+              <app-social class="relative top-40 mt-14 p-3 flex items-center justify-center gap-5"></app-social>
+              </div>
+              </div>
+              <div (click)="closeSidebar()" class="bg-slate-900 hidden md:block md:w-full opacity-70 blur-5xl">
+              
+              
+              
+                </div>
+              </nav>
+           
+                </div>
+        </div>
+       
+      
+      
+      </header>

@@ -1,0 +1,31 @@
+<div class="flex gap-3 ">
+  <ul class="flex gap-3  " *ngIf=" isAdminLogged()">
+   
+    <button class="btn btn- btn-lg hover:border-white hover:bg-white bg-transparent text-white transition-ease-in-out hover:duration-5 00 xl:m-0 border-white " routerLink="/activeadmin" >
+    Admin Menu
+    </button>
+    
+  </ul>
+  <ul class="flex gap-3  " *ngIf=" isStudentogged()">
+   
+    <button class="btn btn- btn-lg hover:border-white hover:bg-white bg-transparent text-white transition-ease-in-out hover:duration-5 00 xl:m-0 border-white "  routerLink="/activestudents">
+    Student Menu
+    </button>
+    
+  </ul>
+  <ul class="flex gap-3  " *ngIf=" !loggedIn()">
+   
+    <button class="btn btn- btn-lg hover:border-white hover:bg-white bg-transparent text-white transition-ease-in-out hover:duration-5 00 xl:m-0 border-white " routerLink="/login">
+      Login
+    </button>
+    
+  </ul>
+  <ul class="flex gap-3  " *ngIf=" loggedIn()">
+   
+    <button class="btn btn- btn-lg hover:border-white hover:bg-white bg-transparent text-white transition-ease-in-out hover:duration-5 00 xl:m-0 border-white " (click)="logout()" >
+      Logout
+    </button>
+    
+  </ul>
+ 
+</div>

@@ -1,0 +1,94 @@
+
+<section class="flex h-screen items-center">
+    <div class=" container ">
+  <div class="card ">
+    <div class="row ">
+        <div class="col-md-7 login  ">
+            
+        </div>
+        <div class="col-md-5  rounded-e-md   bg-white shadow-2xl ">
+            <form class="p-5" [formGroup]="loginForm" (ngSubmit)="login()" >
+    <h1 class="text-3xl font-bold h1 p-2  ">Login</h1>
+                <div class="form-group mt-2">
+                    <label for="firstName">Email</label>
+                    <input 
+                   formControlName="email"
+                        id="name" 
+                        type="email" 
+                        class="form-control  p-3 shadow-inner" placeholder="email*">
+                      
+                        <div *ngIf="f['email'].touched && f['email'].invalid" class="text-danger">
+                            <div *ngIf="f['email'].errors && f['email'].errors['required']">Email required.</div>
+                            <div *ngIf="f['email'].errors && f['email'].errors['email']"> Invalid Email .</div>
+                        </div> 
+                </div>
+                <div class="form-group mt-3">
+                    <label for="lastName">Password</label>
+                    <input 
+                    formControlName="password"
+                        id="name" 
+                        type="password" 
+                        class="form-control p-3 shadow-inner" placeholder="Password*">
+                        <div *ngIf="f['password'].touched && f['password'].invalid" class="text-danger">
+                            <div *ngIf="f['password'].errors && f['password'].errors['required']">Password required.</div>
+                           
+                        </div> 
+                       
+                       
+                </div>
+            <p class="text-red-600 mt-3 cursor-pointer "(click)="toggleModal()" >Forgot password?</p>
+              
+               
+           
+                <div class="d-grid gap-2 mt-3">
+                    <button class="rounded p-2 hover:text-white text-white bg-green-600 mt-3" type="submit">Login</button>
+                    
+                  </div>
+                 
+               
+            </form>
+        </div>
+    </div>
+  </div>
+   </div>
+</section>
+
+  <div *ngIf="showModal" class="overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
+    <div class="relative w-auto my-6 mx-auto max-w-6xl">
+      <!--content-->
+      <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+        <!--header-->
+        <div class="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+          <h3 class="text-3xl font-semibold">
+            Contact Admin
+          </h3>
+          <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" (click)="toggleModal()">
+            <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+              ×
+            </span>
+          </button>
+        </div>
+        <!--body-->
+        <div class="relative p-6 flex-auto">
+          <p class="my-4 text-slate-500 text-lg leading-relaxed">
+            I always felt like I could do anything. That’s the main
+            thing people are controlled by! Thoughts- their perception
+            of themselves! They're slowed down by their perception of
+            themselves. If you're taught you can’t do anything, you
+            won’t do anything. I was taught I could do everything.
+          </p>
+          
+        </div>
+        <!--footer-->
+        <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+          <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" (click)="toggleModal()">
+            Close
+          </button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="showModal" class="opacity-25 fixed inset-0 z-40 bg-black"></div>
+
+  

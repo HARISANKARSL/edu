@@ -1,0 +1,37 @@
+<ul class="lg:flex gap-2 items-center h-24 l">
+  <li
+    class="cursor-pointer hover:text-red-600 text-md hover:transition-ease duration-500 text-lg xl:mt-0 xl:p-0 p-3 border-t lg:border-0"
+    routerLink="/home"
+    [routerLinkActive]="['active']"
+  >
+    Home
+  </li>
+  <li
+    class="cursor-pointer hover:text-red-600 text-lg hover:transition-ease duration-500 xl:p-0 p-3 border-t lg:border-0"
+    routerLink="/about"[routerLinkActive]="['active']"
+  >
+    About
+  </li>
+  <div class="flex item-center">
+    <li
+      class="cursor-pointer hover:text-red-600 text-lg hover:transition-ease duration-500 flex p-3 border-t w-full lg:border-0" routerLink="/gallery" [routerLinkActive]="['active']"
+    >
+      Gallery
+    </li>
+  </div>
+  <li
+    class="cursor-pointer hover:text-red-600 text-lg hover:transition-ease duration-500 p-3 lg:border-0 border-y"
+    routerLinkActive="active"
+    routerLink="/faculties"
+    [routerLinkActive]="['active']"
+  >
+    Faculties
+  </li>
+  <li
+    class="cursor-pointer hover:text-red-600 text-lg hover:transition-ease duration-500 p-3 lg:border-0 border-y"
+    [routerLinkActive]="['active']"
+    routerLink="/contact"
+  >
+    Contact us
+  </li>
+</ul>
