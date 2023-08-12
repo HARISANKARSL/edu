@@ -1,3 +1,4 @@
-::ng-deep .owl-carousel .owl-item img {
-    width: 60px !important;
+.fonts{
+    font-family: 'Handlee', cursive;
+font-family: 'Zilla Slab', serif;
 }

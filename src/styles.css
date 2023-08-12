@@ -8,7 +8,12 @@
         @apply max-w-7xl px-5 mx-auto
     }
 }
-html, body { height: 100%; }
+html, body { height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-family: 'Zilla Slab', serif;
+}
 
 
 
